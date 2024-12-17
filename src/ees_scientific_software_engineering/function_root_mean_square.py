@@ -4,15 +4,20 @@ This is a docstring
 
 import numpy as np
 
+
 class SizeError(Exception):
     """
     Custom expection size for less than one
     """
+
     pass
+
+
 class NanError(Exception):
     """
     Custom expection contains nan
     """
+
     pass
 
 
@@ -28,9 +33,9 @@ def rms(input_array: np.ndarray) -> float:
     if np.size(input_array) < 1:
         raise SizeError("The size of the input array should be at least one!")
 
-    if np.any(np.isinf(input_array)) and not np.any(np.isnan(input_array)) :
+    if np.any(np.isinf(input_array)) and not np.any(np.isnan(input_array)):
         raise ValueError("There should be no inf in the input array!")
-    
+
     if np.any(np.isnan(input_array)) and not np.any(np.isinf(input_array)):
         raise NanError("There should be no nan in the input array!")
 
