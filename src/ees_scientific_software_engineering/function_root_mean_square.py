@@ -1,5 +1,9 @@
 import numpy as np
 
+"""
+These functions calculate rms
+"""
+
 
 def rms(input_array: np.ndarray) -> float:
     """
