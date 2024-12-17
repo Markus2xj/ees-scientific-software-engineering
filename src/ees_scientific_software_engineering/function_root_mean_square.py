@@ -4,11 +4,14 @@ This is a docstring
 
 import numpy as np
 
+
 class DimensionError(Exception):
     """
     Custom exception for dimensionality error
     """
+
     pass
+
 
 def rms(input_array: np.ndarray) -> float:  # input_array should be an instance of np.ndarray.
     """
@@ -19,7 +22,7 @@ def rms(input_array: np.ndarray) -> float:  # input_array should be an instance 
     Returns:
     float: rms value
     """
-    if not isinstance(input_array,np.ndarray):
+    if not isinstance(input_array, np.ndarray):
         raise TypeError("Type is not np.ndarray!")
 
     if input_array.ndim != 1:
