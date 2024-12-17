@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from ees_scientific_software_engineering.function_root_mean_square import NanError, DimensionError, SizeError, rms
+from ees_scientific_software_engineering.function_root_mean_square import DimensionError, NanError, SizeError, rms
 
 
 def test_rms():
@@ -25,7 +25,8 @@ def testDType():
     a = np.ones(10, dtype="int")
     with pytest.raises(TypeError, match="Datatype is not np.float64"):
         rms(a)
-      
+
+
 def test_size_error():
     a = np.ones(0)
     with pytest.raises(SizeError, match="The size of the input array should be at least one!"):

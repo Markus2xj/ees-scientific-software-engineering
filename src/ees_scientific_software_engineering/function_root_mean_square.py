@@ -10,7 +10,7 @@ class DimensionError(Exception):
     Custom exception for dimensionality error
     """
 
-    
+
 class SizeError(Exception):
     """
     Custom expection size for less than one
