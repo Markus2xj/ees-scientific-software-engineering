@@ -10,15 +10,11 @@ class SizeError(Exception):
     Custom expection size for less than one
     """
 
-    pass
-
 
 class NanError(Exception):
     """
     Custom expection contains nan
     """
-
-    pass
 
 
 def rms(input_array: np.ndarray) -> float:
