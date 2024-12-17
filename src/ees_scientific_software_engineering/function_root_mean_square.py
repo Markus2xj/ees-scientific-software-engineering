@@ -1,8 +1,8 @@
-import numpy as np
+"""
+This is a docstring
+"""
 
-"""
-These functions calculate rms
-"""
+import numpy as np
 
 
 def rms(input_array: np.ndarray) -> float:
