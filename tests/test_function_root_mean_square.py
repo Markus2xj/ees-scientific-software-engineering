@@ -24,7 +24,7 @@ def testDimensionality():
 def testDType():
     a = np.ones(10, dtype="int")
     with pytest.raises(TypeError, match="Datatype is not np.float64"):
-
+        rms(a)
       
 def test_size_error():
     a = np.ones(0)
