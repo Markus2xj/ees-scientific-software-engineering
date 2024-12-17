@@ -10,8 +10,6 @@ class DimensionError(Exception):
     Custom exception for dimensionality error
     """
 
-    pass
-
 
 def rms(input_array: np.ndarray) -> float:  # input_array should be an instance of np.ndarray.
     """
