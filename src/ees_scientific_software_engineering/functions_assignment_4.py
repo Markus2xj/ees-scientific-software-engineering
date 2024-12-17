@@ -1,3 +1,7 @@
+"""
+These are functions used for exercise 4
+"""
+
 import numpy as np
 
 
